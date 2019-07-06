@@ -50,7 +50,8 @@ def extract_image_text(image_path, lang='eng'):
     '''
     Extract OCR information from image as string
     '''
-    return pytesseract.image_to_string(image_path, lang=lang)
+    img = Image.open(image_path)
+    return pytesseract.image_to_string(img, lang=lang)
 
 
 def _convert(data):
