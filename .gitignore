@@ -1,0 +1,12 @@
+*.pyc
+*.db
+*.sqlite3
+node_modules
+.coverage
+.cache
+htmlcov
+.pytest_cache
+.DS_Store
+*env
+*logs
+.vscode/
