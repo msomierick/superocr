@@ -10,3 +10,4 @@ htmlcov
 *env
 *logs
 .vscode/
+instance/uploads/*
