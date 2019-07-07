@@ -42,5 +42,5 @@ COPY . /app
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
-# Run the Flask application
-CMD ["gunicorn", "-b 0.0.0.0:8000",  "manage:app"]
+# Run the Flask application with gunicorn
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "manage:app"]
