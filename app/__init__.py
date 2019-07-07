@@ -10,7 +10,8 @@ from app.utils import (
 
 
 def create_app(test_config=None):
-    # create and configure the app
+    '''App factory. Create and configure the app'''
+    
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
@@ -33,6 +34,12 @@ def create_app(test_config=None):
 
     @app.route('/', methods=['GET', 'POST'])
     def image_data():
+        '''
+        Extract OCR and Exif metadata from uploaded images and return as JSON.
+
+        GET - display a simple upload form.
+        POST - extract data from the uploaded form and return it as JSON.
+        '''
         if request.method == 'POST':
             # check if the post request has the file part
             if 'file' not in request.files:
