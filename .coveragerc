@@ -1,4 +1,6 @@
 [run]
 omit =
     config.py
+    manage.py
     *tests/*
+    *venv/*
