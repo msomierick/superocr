@@ -179,6 +179,8 @@ Clone the repo:
 
 `git clone https://github.com/msomierick/superocr.git`
 
+Create an uploads folder in the instance dir to store the uploaded images.
+
 Create a virtual environment and install the dependencies(Use Python>=3.5):
 
 ```bash
