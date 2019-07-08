@@ -14,7 +14,10 @@ def get_available_image_extensions():
     :returns: a list of the available image extensions
     '''
     Image.init()
-    return [ext.lower()[1:] for ext in Image.EXTENSION]
+    extensions = [ext.lower()[1:] for ext in Image.EXTENSION]
+    # remove pdf from allowed extensions. Not supported.
+    extensions.remove('pdf')
+    return extensions
 
 
 def is_image_file(filename):
