@@ -55,6 +55,7 @@ def test_extract_image_text():
 
     expected = 'ti Jeff Forcier Retweeted\n\nJared Palmer @jaredpalmer - '
     expected += 'Jun 24 \\\nSe, When you merge your own pull request'
+    expected += '\n\n \n\nQ 43 TV) 1.1K © 5.5K han'
 
     assert actual == expected
 
