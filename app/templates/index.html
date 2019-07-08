@@ -32,11 +32,29 @@
     <div class="container">
         <div class="row">
             <div class="column" style="margin-top: 25%">
-                <h4>Upload an image to get information about it</h4>
+                <h4>Upload an image to get its OCR and Exif information as JSON</h4>
                 <form id="form" method="post" enctype="multipart/form-data"> <p>
+                    <p>Choose an image and hit the upload button</p>
                     <input type=file name=file class="u-full-width">
                     <input id=upload type=submit value=Upload class="button-primary">
                 </form>
+                <p>
+                  This endpoint allows users to an upload image and get its OCR and Exif metadata as a JSON response.
+                </p>
+                <p>
+                  For the OCR data, the project uses <a href="https://github.com/tesseract-ocr/tesseract">Google's Tesseract-OCR
+                    Engine</a> to
+                  recognise and read the text embedded in images, a form of optical character recognition (OCR).
+                </p>
+                <p style="color:gray;">After uploading just click back button to upload another image.</p>
+                <p>Links</p>
+                <ul>
+                  <li><a href="https://github.com/msomierick/superocr">Github Repo</a></li>
+                  <li><a href="https://hub.docker.com/r/donmanyo/superocr">Docker image</a></li>
+                </ul>
+                <footer>
+                  <p class="u-pull-right" style="color:gray;">Crafted by <a href="https://labofcoding.com/">Erick M</a></p>
+                </footer>
             </div>
         </div>
     </div>
