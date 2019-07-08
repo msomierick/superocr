@@ -202,4 +202,4 @@ Run the tests thus, within the cloned repo root folder and the virtual environme
 
 You can view the Coverage HTML test report by open `htmlcov/index.html` in a browser of your choice.
 
-The project is also integrated with circleci for running the tests.
+The project is also integrated with CircleCI for running the tests. The CircleCI tests can be viewed [here](https://circleci.com/gh/msomierick/superocr).
