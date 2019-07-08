@@ -1,5 +1,7 @@
 # Super OCR
 
+[![CircleCI](https://circleci.com/gh/msomierick/superocr/tree/master.svg?style=svg)](https://circleci.com/gh/msomierick/superocr/tree/master)
+
 This is a Flask project which extracts OCR(Optical Character Recognition) data and Exif
 (Exchangeable image file format) data from uploaded images.
 
