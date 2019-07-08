@@ -45,5 +45,5 @@ jobs:
             pytest
 
       - store_artifacts:
-          path: test-reports
+          path: htmlcov
           destination: test-reports

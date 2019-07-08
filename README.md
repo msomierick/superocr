@@ -193,7 +193,7 @@ Start the Flask project thus:
 
 `python3 manage.py`
 
-Visit `http://localhost:7777/` either with Postman or a browser to it working.
+Visit `http://localhost:5000` either with Postman or a browser to it working.
 
 ## Running unit tests
 
